@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Document</title>
+</head>
+<body onload="javascript:loadFunc1()">
+    
+    <form action="checkout.html" method="post">
+
+    <!-- I have changed the "action" of the form to my page since there is no home.php yet, so when you guys create one, make sure to redirect to checkout.html from php only after your data handling is done on your server side script i.e. PHP.-->
+
+        <label for="parking">Parking Slot: </label>
+        <select name="" id="parking">
+            <option value="a1">A1</option>
+            <option value="a2">A2</option>
+            <option value="a3">A3</option>
+            <option value="b1">B1</option>
+            <option value="b2">B2</option>
+            <option value="b3">B3</option>
+            <option value="c1">C1</option>
+            <option value="c2">C2</option>
+            <option value="c3">C3</option>
+        </select>
+
+        <br><br>
+
+        <label for="entrydate">Date of Entry: </label>
+        <p id="date"></p>
+
+        <br>
+
+        <label for="entrytime">Time of Entry: </label>
+        <p id="demo"></p>
+
+        <button type="submit" class="checkout">Checkout</button>
+
+    </form>
+</body>
+</html>
